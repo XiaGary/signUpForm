@@ -5,7 +5,7 @@ html *{
 }
 .img-background{
     background-image: url('halie-west-25xggax4bSA-unsplash.jpg');
-    width: 40%;
+    min-width: 40%;
     height: 100vh;
     background-size: 100% 100%;
     position: relative;
@@ -26,7 +26,7 @@ html *{
     /* background-color: black;
     opacity: 1; */
     background: rgba(0,0,0,0.5);
-    width: 40%;
+    min-width: 40%;
     padding: 10px 0;
 }
 .logo{
@@ -41,4 +41,22 @@ html *{
 .odin{
     margin-top: 20px;
 }
-
+.header{
+    background-color: #f9f9f9;
+    height: 40vh;
+    font-weight: bold;
+    font-family: "Helvetica", "Arial", sans-serif;
+    padding-left: 30px;
+    padding-top: 130px;
+    padding-right: 200px;
+    font-size: 20px;
+}
+.form{
+    height: 25vh;
+}
+.foot{
+    height: 30vh;
+}
+.header p + p{
+    padding-top: 25px;
+}
