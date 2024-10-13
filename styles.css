@@ -46,17 +46,65 @@ html *{
     height: 40vh;
     font-weight: bold;
     font-family: "Helvetica", "Arial", sans-serif;
-    padding-left: 30px;
-    padding-top: 130px;
-    padding-right: 200px;
+    padding: 130px 200px 0 50px;
     font-size: 20px;
 }
 .form{
-    height: 25vh;
+    height: 30vh;
+    box-shadow: 0 4px 2px -2px gray;
 }
 .foot{
     height: 30vh;
 }
 .header p + p{
     padding-top: 25px;
+}
+input, label{
+    display: block;
+    padding-top: 10px;
+}
+.form{
+    padding-left: 50px;;
+}
+.formheader{
+    display: block;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+input{
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    width: 200px;
+    margin-top: 3px;
+    text-indent: 10px;
+}
+label{
+    letter-spacing: 1.5px;
+    margin-top: 3px;
+}
+.formcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    font-size: 12px;
+}
+
+.fullname, .emailandnumber, .passwords{
+    display: flex;
+}
+.firstandlast, .emailnum, .password{
+    display: flex;
+    flex-direction: column;
+}
+.last, .number, .confirmpassword{
+    padding-left: 75px;
+}
+
+input[id="password"]:invalid, input[id="confirmpassword"]:invalid{
+    border: none;
+    outline: 2px solid red;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus{
+    outline: 1px solid blue;
 }
